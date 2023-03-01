@@ -1,0 +1,42 @@
+.header {
+    border: 1px solid #262626;
+    padding: 40px 0px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header-menu {
+            display: flex;
+            gap: 15%;
+            flex-basis: 40%;
+            justify-content: right;
+            
+        }
+
+        .header-side {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+
+            button {
+                width: 155px;
+                height: 34px;
+                svg {
+                    width: 12.5px;
+                    height: 10px;
+                }
+            }
+        }
+        
+        a:hover {
+            @include gold-text;
+            transition: .3s;
+        }
+
+    }
+
+}
+

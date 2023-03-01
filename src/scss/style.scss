@@ -13,6 +13,7 @@
 
 // blocks
 
-p {
-    @include gold-text;
-}
+@import "blocks/header.scss";
+@import "blocks/start.scss";
+
+
