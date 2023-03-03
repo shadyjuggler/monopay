@@ -1,0 +1,61 @@
+
+
+.download {
+
+    .download-field {
+        display: flex;
+        position: relative;
+
+        min-height: 542px;
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(200.74deg, rgba(214, 211, 194, 0.2) 0%, rgba(92, 92, 92, 0.14) 100%);
+        box-shadow: inset -2.62px -1.618px 4.23916px rgba(250, 250, 250, 0.22);
+        border-radius: 60px;
+
+        border: 1px solid #989898;
+        overflow: hidden;
+
+        padding: 100px 80px;
+
+        .download-info {
+            max-width: 539px;
+
+            .download-descr {
+                margin-top: 93px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 180%;
+                color: $white2;
+            }
+    
+            .sources-wrapper {
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 45px;
+                button {
+                    width: 245px;
+                    height: 54px;   
+                    svg {
+                        display: block;
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+
+                .links {
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+    
+        }
+       
+        img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

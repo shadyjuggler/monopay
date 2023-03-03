@@ -42,6 +42,13 @@ button {
   margin: 0 auto;
 }
 
+.separator {
+  margin-top: 18px;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(270deg, #262626 0%, #ADA785 87.01%, #262626 100%);
+}
+
 .btn-gold {
   display: flex;
   justify-content: center;
@@ -58,7 +65,47 @@ button {
   
   border-radius: 60px;
 
+  svg {
+    display: block
+  }
+
   p {
       @include gold-text;
   }
+}
+
+.subtitle {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 22.65px;
+  line-height: 30px;
+
+  color: #ADA785;
+}
+
+.title {
+  margin-top: 10px;
+
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 59.3px;
+  line-height: 78px;
+  letter-spacing: -0.04em;
+
+  color: #E5E5E5;
+  span {
+    @include gold-text;
+  }
+  
+}
+
+.title-descr {
+  margin-top: 40px;
+
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: $white2;
 }

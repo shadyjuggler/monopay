@@ -1,0 +1,113 @@
+.features {
+    .features-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .big {
+            flex-basis: 65.8%;
+        }
+
+        .big:hover {
+            transition: .3s;
+            box-shadow: inset -3.62px -2.618px 4.23916px #8b8458;
+        }
+
+        .small {
+            flex-basis: 31.6%;
+            min-width: 314px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 70%;
+                height: 100%;
+                background: #FFD700;
+                filter: blur(125px);
+                transform: translate(20%, 95%);
+            }
+        }
+
+        .features-item {
+            margin-top: 60px;
+            position: relative;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(200.74deg, rgba(214, 211, 194, 0.2) 0%, rgba(92, 92, 92, 0.14) 100%);
+            box-shadow: inset -2.62px -1.618px 4.23916px rgba(250, 250, 250, 0.22);
+            border-radius: 60px;
+            border: 1px solid #989898;
+            overflow: hidden;
+            height: 400px;
+
+            padding: 60px 40px;
+
+            img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            .item-title {
+                font-weight: 300;
+                font-size: 59.3px;
+                line-height: 78px;
+                letter-spacing: -0.04em;
+
+            }
+
+            .item-descr {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 180%;
+            }
+
+            .item-content-big {
+                width: 280px;
+            }
+
+            .item-title {
+                max-width: 210px;
+            }
+
+            .item-content {
+                opacity: 0;
+                position: absolute;
+                transform: translate(-10%, -15%);
+                border-radius: 60px;
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.6);
+                backdrop-filter: blur(7px);
+                padding: 60px 40px;
+                z-index: 0;
+
+                .item-subtitle {
+                    font-weight: 400;
+                    font-size: 22.65px;
+                    line-height: 30px;
+                    color: $white;
+                    z-index: 1;
+                }
+
+                .item-descr {
+                    margin-top: 30px;
+                    z-index: 1;
+                }
+                
+            }
+
+            &:hover {
+                .item-content {
+                    box-shadow: inset -3.62px -2.618px 3px #8b8458;
+                    transition: all 0.4s;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.section-1, .section-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .main-info {
+        max-width: 620px;
+
+        .stats-wrapper {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            .stats-item {
+                margin-top: 60px;
+                .content {
+                    display: flex;
+                    align-items: center;
+                    width: 90px;
+                    gap: 40px;
+                    .accent {
+                        width: 100px;
+                        font-size: 60px;
+                        display: flex;
+                        @include gold-text;
+                    }
+                    .text {
+                        max-width: 117px;
+                        color: $white;
+                    }
+                }
+                .separator {
+                    width: 70%;
+                }
+                .stats-item-descr {
+                    margin-top: 40px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 180%;
+                    color: $white2;
+
+                }
+            }
+            .stats-item:nth-child(1) , .stats-item:nth-child(2) {
+                flex-basis: 45%;
+            }
+        }
+    }
+}

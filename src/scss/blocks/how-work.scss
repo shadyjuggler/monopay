@@ -1,0 +1,33 @@
+.how-work {
+    .how-work-wrapper {
+        margin-top: 125px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .how-work-item {
+            flex-basis: 23%;
+            min-width: 228px;
+            .content {
+                display: flex;
+                align-items: center;
+                // justify-content: space-between;
+                gap: 40px;
+                .accent {
+                    font-size: 60px;
+                    display: flex;
+                    @include gold-text;
+                }
+                .text {
+                }
+            }
+            .separator {
+                width: 60%;
+            }
+            .how-work-descr {
+                margin-top: 40px;
+                font-weight: 300;
+                line-height: 180%;
+            }
+        }
+    }
+}
