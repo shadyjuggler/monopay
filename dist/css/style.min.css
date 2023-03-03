@@ -190,6 +190,10 @@
   margin-top: 140px;
 }
 
+.mt-160 {
+  margin-top: 160px;
+}
+
 .mt-200 {
   margin-top: 200px;
 }
@@ -666,8 +670,9 @@ button {
   font-weight: 400;
 }
 
-a {
+a, li {
   text-decoration: none;
+  list-style: none;
 }
 
 button {
@@ -2529,12 +2534,8 @@ button.swiper-pagination-bullet {
   height: 10px;
 }
 .header .container a:hover {
-  background: linear-gradient(63.68deg, #ADA785 0%, #D6D3C2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  transition: 0.3s;
+  color: #ADA785;
+  transition: 0.2s;
 }
 
 .start {
@@ -2598,6 +2599,86 @@ button.swiper-pagination-bullet {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.blogs-section {
+  display: flex;
+  justify-content: space-between;
+}
+.blogs-section .blog:hover .blog-title {
+  color: #ADA785;
+}
+.blogs-section .big-blog {
+  max-width: 620px;
+}
+.blogs-section .other-blogs {
+  max-width: 510px;
+}
+.blogs-section .other-blogs .blog-title {
+  margin-top: 40px;
+}
+.blogs-section .other-blogs .continue {
+  margin-top: 20px;
+}
+.blogs-section .other-blogs .continue a {
+  font-size: 16px;
+}
+.blogs-section .blog-title {
+  transition: 0.3s;
+  margin-top: 60px;
+  font-weight: 400;
+  font-size: 36.65px;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+}
+.blogs-section .blog-descr {
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 180%;
+  color: #CCCCCC;
+}
+.blogs-section .continue {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.blogs-section .continue a {
+  display: block;
+  background: linear-gradient(63.68deg, #ADA785 0%, #D6D3C2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 22.65px;
+  line-height: 30px;
+}
+.blogs-section .continue svg {
+  width: 24px;
+  height: 24px;
+  transform: translateY(15%);
+}
+.blogs-section .continue .big svg {
+  width: 30px;
+  height: 30px;
+}
+.blogs-section .browse {
+  margin-top: 175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogs-section .browse .separator {
+  margin: 0;
+  width: 50%;
+}
+.blogs-section .browse button {
+  width: 260px;
+  height: 54px;
+  font-weight: 400;
+  font-size: 22.65px;
+  line-height: 30px;
 }
 
 .download .download-field {
@@ -2735,6 +2816,87 @@ button.swiper-pagination-bullet {
   box-shadow: inset -3.62px -2.618px 3px #8b8458;
   transition: all 0.4s;
   opacity: 1;
+}
+
+.footer {
+  border-top: 1px solid #262626;
+  padding: 80px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-main, .footer .footer-menu {
+  flex-basis: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer li {
+  margin-top: 10px;
+}
+.footer li a {
+  font-weight: 300;
+  line-height: 180%;
+  /* or 25px */
+  transition: 0.2s;
+  color: #999999;
+}
+.footer li a:hover {
+  color: #ADA785;
+}
+.footer .footer-contact .footer-links {
+  display: flex;
+  min-width: 264px;
+  align-items: center;
+  gap: 90px;
+}
+.footer .footer-contact .footer-links .links {
+  display: flex;
+  gap: 40px;
+}
+.footer .footer-contact .footer-text {
+  color: #999999;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 180%;
+}
+.footer .footer-contact .buttons {
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+}
+.footer .footer-contact .buttons button {
+  width: 203px;
+  height: 60px;
+}
+.footer .footer-descr {
+  margin-top: 40px;
+  border-top: 1px solid #262626;
+  padding-top: 40px;
+}
+.footer .footer-descr .footer-text {
+  font-weight: 300;
+  line-height: 180%;
+}
+.footer .footer-menu .upper-lists {
+  display: flex;
+  gap: 30px;
+}
+.footer .footer-menu .upper-lists .list ul {
+  margin-top: 20px;
+}
+.footer .footer-menu .down-lists {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+}
+.footer .footer-menu .down-lists button {
+  width: 180px;
+  height: 64px;
+}
+.footer .list {
+  min-width: 180px;
 }
 
 .how-work .how-work-wrapper {
