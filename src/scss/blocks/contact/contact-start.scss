@@ -1,0 +1,8 @@
+.contact-start {
+    display: flex;
+    gap: 80px;
+    .descr {
+        max-width: 400px;
+        align-self: flex-end;
+    }
+}

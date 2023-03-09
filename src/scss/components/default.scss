@@ -10,16 +10,26 @@ body {
     overflow: hidden;
   }
 }
-
 h1 {
+  font-size: 95px;
   font-weight: 300;
-  letter-spacing: -0.06em;
+  span {
+      @include gold-text;
+}
 }
 
 .descr {
   font-weight: 300;
   color: $white;
   line-height: 180%;
+  span {
+    font-weight: 700;
+    font-size: 22.65px;
+    line-height: 30px;
+    /* identical to box height */
+    color: $white;    
+  }
+  color: $white2;
 }
 
 h2,
@@ -108,4 +118,45 @@ button {
   line-height: 21px;
 
   color: $white2;
+}
+
+.stats {
+  .start-stats-item {
+      .content {
+          display: flex;
+          align-items: center;
+          // justify-content: space-between;
+          gap: 40px;
+          img {
+            display: block;
+          }
+          .accent {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              width: 180px;
+              font-size: 60px;
+              display: flex;
+              @include gold-text;
+              span {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #E5E5E5;
+              }
+          }
+          .text {
+              display: inline-block;
+          }
+      }
+     
+      
+  }
+  
+}
+
+.map{
+  filter: grayscale(32%) brightness(50%) saturate(0%) contrast(165%) invert(11%);
+  -webkit-filter: grayscale(32%) brightness(50%) saturate(0%) contrast(165%) invert(11%);
+  -moz-filter: grayscale(32%) brightness(50%) saturate(0%) contrast(165%) invert(11%);
 }

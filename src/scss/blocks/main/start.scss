@@ -2,13 +2,6 @@
     position: relative;
     .start-intro {
         max-width: 620px;
-        h1 {
-            font-size: 95px;
-            font-weight: 300;
-            span {
-                @include gold-text;
-            }
-        }
 
         .start-intro-descr {
             max-width: 400px;
@@ -62,5 +55,6 @@
         position: absolute;
         top: 0;
         right: 0;
+        max-width: 620px;
     }
 }

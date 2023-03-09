@@ -1,0 +1,14 @@
+.mission {
+    .mission-content {
+        display: flex;
+        justify-content: space-between;
+
+        .side-left {
+            max-width: 400px;
+        }
+
+        .side-right {
+            max-width: 730px;
+        }
+    }
+}

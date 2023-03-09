@@ -1,0 +1,16 @@
+.contact-main {
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        .stats {
+            max-width: 400px;
+            .descr {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 180%;
+                color: #E5E5E5;
+            }
+        }
+    }
+    
+}

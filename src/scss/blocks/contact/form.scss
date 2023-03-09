@@ -1,0 +1,112 @@
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    .left-side {
+        max-width: 400px;
+        .map {
+            max-width: 400px;
+            height: 472px;
+            background-image: url("../img/map.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 20px;
+            .current-location {
+                button {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        .descr {
+            color: #999999;
+        }
+    }
+
+    .form {
+        form {
+            max-width: 730px;
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 180%;
+                /* identical to box height, or 29px */
+
+
+                color: #E5E5E5;
+            }
+            input, textarea {
+                margin-top: 20px;
+                padding: 16px 24px 16px 16px;
+                gap: 10px;
+
+                width: 290px;
+                height: 61px;
+                
+                border: 1px solid #989898;
+
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(200.74deg, rgba(214, 211, 194, 0.2) 0%, rgba(92, 92, 92, 0.14) 100%);
+                box-shadow: inset -2.62px -1.618px 4.23916px rgba(250, 250, 250, 0.22);
+                backdrop-filter: blur(11.325px);
+                /* Note: backdrop-filter has minimal browser support */
+
+                border-radius: 10px;
+                color: rgba(173, 167, 133, 1);
+            }
+            input::placeholder, textarea::placeholder {
+                color: rgba(173, 167, 133, 1);
+                opacity: 0.5;
+            }
+            .name-email {
+                width: 100%;
+                display: flex;
+                gap: 40px;
+                .email {
+                    input {
+                        min-width: 400px;
+                    }
+                }
+            }
+            .message {
+                display: flex;
+                justify-content: space-between;
+                textarea {
+                    min-width: 510px;
+                    min-height: 169px;
+                }
+                
+                .annotation {
+                    align-self: flex-end;
+                    padding-bottom: 10px;
+                    color: #999999;
+                    font-size: 14px;
+                }
+            }
+            .form-footer {
+                display: flex;
+                gap: 40px;
+                
+                button {
+                    width: 180px;
+                    height: 64px;
+                }
+                .descr  {
+                    padding-top: 10px;
+                    max-width: 290px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 180%;
+                    /* or 25px */
+
+
+                    color: #999999;
+                }
+            }
+        }
+    }
+}

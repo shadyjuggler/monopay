@@ -14,13 +14,24 @@
 // blocks
 
 @import "blocks/header.scss";
-@import "blocks/start.scss";
-@import "blocks/blogs-section.scss";
-@import "blocks/download.scss";
-@import "blocks/features.scss";
+@import "blocks/main/start.scss";
+@import "blocks/main/blogs-section.scss";
+@import "blocks/main/download.scss";
+@import "blocks/main/features.scss";
 @import "blocks/footer.scss";
-@import "blocks/how-work.scss";
-@import "blocks/no-fees&your-card.scss";
-@import "blocks/reviews.scss";
+@import "blocks/main/how-work.scss";
+@import "blocks/main/no-fees&your-card.scss";
+@import "blocks/main/reviews.scss";
 
+@import "blocks/company/co-start.scss";
+@import "blocks/company/mission.scss";
+@import "blocks/company/partner.scss";
 
+@import "blocks/blog/blog-start.scss";
+@import "blocks/blog/blogs-section.scss";
+
+@import "blocks/contact/contact-start.scss";
+@import "blocks/contact/contact-main.scss";
+@import "blocks/contact/form.scss";
+
+@import "media/media.scss";

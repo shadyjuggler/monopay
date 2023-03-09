@@ -1,0 +1,113 @@
+.partner {
+    margin-bottom: 100px;
+    .partner-content {
+        display: flex;
+        justify-content: space-between;
+        .side-left {
+            .descr {
+                margin-top: 100px;
+                padding-top: 20px;
+                border-top: 1px solid #262626;
+            }
+            .main {
+                max-width: 400px;
+                display: flex;
+                justify-content: space-between;
+                .data {
+                    min-width: 290px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 11.8%;
+                    .data-item {
+                        .main {
+                            margin-top: 20px;
+                            .price {
+                                font-weight: 400;
+                                font-size: 22.65px;
+                                line-height: 30px;
+                                letter-spacing: -0.04em;
+
+                                color: #E5E5E5;
+                            }
+                            .date {
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 180%;
+
+                                color: #999999;
+                            }
+                        }
+                        .links {
+                            margin-top: 10px;
+                            .links-item {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                .release {
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 180%;
+
+                                    color: #ADA785;
+                                }
+                                .icon {
+                                    svg {
+                                        width: 15px;
+                                        height: 15px;
+                                        transform: translateY(20%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .circles{
+                    min-height: 650px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    position: relative;
+                    width: 70px;
+                    button {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100%;
+                        font-size: 22.65px;
+                        z-index: 1;
+                    }
+                    .line {
+                        z-index: 0;
+
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        height: 100%;
+                        width: 2px;
+                        position: absolute;
+                        background: linear-gradient(60deg, #262626 0%, #ADA785 87.01%, #262626 100%);
+                    }
+                }
+            }
+        }
+        .side-right {
+            max-width: 730px;
+            .item {
+                display: flex;
+                gap: 60px;
+                .icon {
+                    svg {
+                        width: 190px;
+                        height: 190px;
+                    }
+                }
+            }
+            .item:nth-child(2) {
+                margin-top: 60px;
+            }
+            .item:nth-child(1) {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
